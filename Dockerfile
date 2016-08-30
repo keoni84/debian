@@ -1,8 +1,8 @@
 FROM debian:latest
-
+ARG DEBIAN_FRONTEND=noninteractive
 MAINTAINER John Headley "keoni84@gmail.com"
 
-RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive && apt-get install -yqq \
+RUN apt-get update -qq && apt-get install -yqq \
 systemd \
 systemd-sysv \
 dbus \
