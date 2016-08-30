@@ -6,7 +6,7 @@ RUN apt-get update -qq && apt-get install -yqq \
 systemd \
 systemd-sysv \
 libpam-systemd \
-openssh-server \
+dbus \
 less \
 rsync \
 curl \
@@ -14,7 +14,5 @@ curl \
 && /bin/echo 'alias ll="ls -l --color=auto"' >> /etc/bash.bashrc \
 && apt-get autoremove --purge -y \
 && apt-get clean
-
-EXPOSE 22
 
 CMD ["/sbin/init"]
