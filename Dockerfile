@@ -5,7 +5,6 @@ MAINTAINER John Headley "keoni84@gmail.com"
 RUN apt-get update -qq && apt-get install -yqq \
 systemd \
 systemd-sysv \
-dbus \
 libpam-systemd \
 openssh-server \
 less \
