@@ -1,4 +1,4 @@
-FROM docker pull minimum2scp/systemd:latest
+FROM minimum2scp/systemd:latest
 ARG DEBIAN_FRONTEND=noninteractive
 MAINTAINER John Headley "keoni84@gmail.com"
 
