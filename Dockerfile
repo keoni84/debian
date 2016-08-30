@@ -2,7 +2,7 @@ FROM debian:latest
 
 MAINTAINER John Headley "keoni84@gmail.com"
 
-RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -yqq \
+RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive && apt-get install -yqq \
 systemd \
 systemd-sysv \
 dbus \
