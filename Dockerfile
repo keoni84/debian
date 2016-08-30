@@ -1,8 +1,7 @@
 FROM debian:latest
 MAINTAINER John Headley <keoni84@gmail.com>
 
-RUN export DEBIAN_FRONTEND=noninteractive \
-&& echo "
+RUN echo "
 deb http://mirror.steadfast.net/debian/ jessie main contrib non-free
 deb-src http://mirror.steadfast.net/debian/ jessie main contrib non-free
 deb http://security.debian.org/ jessie/updates main contrib non-free
