@@ -3,8 +3,7 @@ FROM debian:latest
 MAINTAINER John Headley "keoni84@gmail.com"
 
 RUN apt-get update && \
-apt-get install -y openssh-server rsync curl && \
-/usr/bin/timedatectl set-timezone Etc/UTC && \
+apt-get install -y openssh-server && \
 rm -rf /var/lib/apt/lists/* && \
 apt-get clean
 
